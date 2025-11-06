@@ -4,12 +4,10 @@ import time
 
 
 def clear_screen() -> None:
-    """Clear terminal content based on the underlying operating system."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def wait_for_key() -> None:
-    """Pause execution until the user presses Enter."""
     input("\nPresiona Enter para continuar...")
 
 
